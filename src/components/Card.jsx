@@ -1,7 +1,7 @@
 import React from 'react'
 import './css/card.scss'
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div class="flip-card">
         <div class="flip-card-inner">
@@ -58,10 +58,10 @@ const Card = () => {
                   OjU2KzAwOjAw0ssWdwAAACh0RVh0ZGF0ZTp0aW1lc3RhbXAAMjAyMy0wMi0xM1QwODoxOTo1Nisw
                   MDowMIXeN6gAAAAASUVORK5CYII=" y="0" x="0" height="50" width="50" id="image0"></image>
                 </svg>
-                <p class="number">9759 2484 5269 6576</p>
+                <p class="number">{props.number}</p>
                 <p class="valid_thru">VALID THRU</p>
                 <p class="date_8264">1 2 / 2 4</p>
-                <p class="name">BRUCE WAYNE</p>
+                <p class="name">{props.name}</p>
             </div>
             <div class="flip-card-back">
                 <div class="strip"></div>
